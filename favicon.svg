@@ -1,7 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <rect width="64" height="64" rx="12" fill="#fbfaf6"/>
-  <ellipse cx="32" cy="30" rx="20" ry="6" fill="#ffffff" stroke="#cfcec8" stroke-width="1.2"/>
-  <path d="M 14 30 C 14 46, 22 52, 32 52 C 42 52, 50 46, 50 30"
-        fill="#ffffff" stroke="#cfcec8" stroke-width="1.2"/>
-  <ellipse cx="32" cy="32" rx="13" ry="3.2" fill="#e6edf1"/>
+  <rect width="64" height="64" rx="12" fill="#000000"/>
+  <text x="32" y="34" text-anchor="middle" dominant-baseline="central"
+        font-family="'Gowun Batang','Batang',serif" font-weight="700"
+        font-size="27" fill="#ffffff" letter-spacing="-1">하토</text>
 </svg>
