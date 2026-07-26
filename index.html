@@ -3,12 +3,12 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-<title>하이퍼토일렛 · hypertoilets</title>
-<meta name="description" content="하이퍼토일렛 — 철학에 코믹을 얹는 퍼포먼스형 3인조." />
-<meta name="theme-color" content="#fbfaf6" />
+<title>하이퍼토일렛 선언문</title>
+<meta name="description" content="하이퍼토일렛 선언문 — 음악과 공연 중심의 컬렉티브." />
+<meta name="theme-color" content="#ffffff" />
 
-<meta property="og:title" content="하이퍼토일렛 · hypertoilets" />
-<meta property="og:description" content="철학에 코믹을 얹는 퍼포먼스형 3인조." />
+<meta property="og:title" content="하이퍼토일렛 선언문" />
+<meta property="og:description" content="음악과 공연 중심의 컬렉티브." />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://hypertoilets.org" />
 <meta property="og:locale" content="ko_KR" />
@@ -16,59 +16,123 @@
 <link rel="icon" type="image/svg+xml" href="favicon.svg" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@200;300;400;500&family=Pretendard:wght@300;400;500&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="style.css" />
+<link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&display=swap" rel="stylesheet" />
 
-<script type="importmap">
-{
-  "imports": {
-    "three": "https://cdn.jsdelivr.net/npm/three@0.161.0/build/three.module.js",
-    "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.161.0/examples/jsm/"
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html { -webkit-text-size-adjust: 100%; }
+
+  body {
+    background: #ffffff;
+    color: #000000;
+    font-family: "Gowun Batang", "Batang", serif;
+    line-height: 1.9;
+    -webkit-font-smoothing: antialiased;
   }
-}
-</script>
+
+  main {
+    max-width: 820px;
+    margin: 0 auto;
+    padding: 12vh 6vw 20vh;
+  }
+
+  h1 {
+    font-size: clamp(2.8rem, 7vw, 4.5rem);
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 1.2em;
+  }
+
+  /* mobile: 하이퍼토일렛 / 선언문 stacked; desktop: one line */
+  h1 span { display: block; }
+
+  @media (min-width: 600px) {
+    h1 span { display: inline; }
+  }
+
+  h2 {
+    font-size: clamp(2rem, 5.5vw, 3.2rem);
+    font-weight: 700;
+    line-height: 1.4;
+    margin-top: 2em;
+    margin-bottom: 0.8em;
+  }
+
+  p {
+    font-size: clamp(1.35rem, 2.9vw, 1.9rem);
+    margin-bottom: 1.3em;
+    word-break: keep-all;
+  }
+
+  p:last-child { margin-bottom: 0; }
+
+  .credits {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2em;
+    margin-top: 4em;
+    padding-top: 2em;
+    border-top: 1px solid #000;
+    font-size: clamp(1rem, 2vw, 1.25rem);
+    line-height: 1.7;
+  }
+
+  .credits .role { opacity: 0.55; }
+
+  .credits .right { text-align: right; }
+</style>
 </head>
 <body>
 
-<section class="stage">
-  <canvas id="scene" aria-hidden="true"></canvas>
-
-  <div class="stage-fade" aria-hidden="true"></div>
-
-  <div class="stage-text">
-    <h1>하이퍼토일렛</h1>
-    <p class="en-name">hypertoilets</p>
-    <p class="tag">철학에 코믹을 얹는 퍼포먼스형 3인조.</p>
-  </div>
-
-  <div class="stage-scroll" aria-hidden="true">scroll ↓</div>
-</section>
-
 <main>
+  <h1><span>하이퍼토일렛</span> <span>선언문</span></h1>
 
-  <section class="block">
-    <p class="label">소개 / about</p>
-    <p class="prose">
-      하이퍼토일렛은 사회 풍자와 삶의 덧없음을 노래합니다.
-      허세 가득한 예술과 체제를 비틀고, 그 덧없음을 음악과 함께하는 축제와 놀이로 넘어서자고 제안합니다.
-      해학적인 가사로 청자의 주의를 붙들어둔 뒤, 그 틈에 비판과 무상에 대한 사유의 계기를 끼워 넣습니다.
-    </p>
-  </section>
+  <p>하이퍼토일렛은 음악과 공연 중심의 컬렉티브다.</p>
 
-  <section class="block">
-    <p class="label">접선 / contact</p>
-    <ul class="links">
-      <li><a href="https://instagram.com/hypertoilets" target="_blank" rel="noopener">@hypertoilets</a></li>
-    </ul>
-  </section>
+  <p>공동체는 와해되고 개인은 고립되어 간다. 우리는 이런 시대일수록 한자리에 모여, 자신을 잊고 공동체에 스며드는 무아의 시간이 절실해진다고 믿는다. 그 시간을 가로막는 셋을 우리는 벗는다: 나르시시즘, 사대주의, 완벽주의.</p>
 
+  <h2>탈-나르시시즘</h2>
+
+  <p>공연은 퍼포머가 자신이 얼마나 멋진 인간인지 과시하는 자리가 아니다. 한자리에 모여 자신을 잊고, 우리가 한 공동체에 속해 있음을 다시 확인하고, 때로는 공동체의 아픔을 달래는 자리다. 그러나 요즘의 공연은 대부분 과시에 집중한다. 우리는 반대로 "나"를 내려놓는 데 집중한다. 퍼포머와 관객 모두.</p>
+
+  <p>음악의 강점은 깊은 의미를 담는 데 있지 않다. 오히려 깊은 의미를 담기 어렵다는 것이 음악의 근본적인 한계다. 깊은 의미를 담고 싶다면 문학 작가가 되기를 권한다. 음악의 강점은 다른 데 있다. 쉽게 무아지경에 빠뜨린다는 것, 그리고 단순한 메시지에 멜로디가 붙는 순간 뇌리에 박힌다는 것. 이 한계를 받아들이지 못하고 음악에 깊은 의미를 담겠다며 자기만의 세계에서 되뇌고 되뇌다 보면, 타인은 이해할 수 없는 현학적인 작품이 태어난다.</p>
+
+  <p>더 나쁜 것은 자신이 얼마나 멋진 인간인지 과시하기 위해 일부러 현학적으로 만드는 경우다. 별 볼 일 없는 메시지를 비틀고 꼬아 이해하기 어렵게 만들어 놓고, 감상자가 "예술이란 원래 어려운 것"이라 느끼기를 기대한다. 감상자는 작품을 해독하며 대단한 의미를 찾느라 시간을 쓰다가, 결국 스스로 갖다 붙인 해석에 만족하고 만다. 그 해석은 나의 세계를 부술 수 있는 바깥에서 온 것이 아니라, 나의 세계를 지키기 위해 안에서 만들어낸 것이다. 작품을 보기 전과 후의 나는 같은 사람이다.</p>
+
+  <p>자신의 세계는 끊임없이 파괴되고 재구축되어야 한다.</p>
+
+  <h2>탈-사대주의</h2>
+
+  <p>우리 한국인이 사대주의에 찌들었다는 것은 쉽게 알 수 있다. 지금 당신 주변을 둘러보라. 한국적이라 할 수 있는 것이 몇이나 되는가? 한국인이 한국적인 것을 너무 몰라, 이제는 발굴해내야 하는 지경에 이르렀다. 물론 서양 문물이 물밀듯 들어오던 시기라면 나였어도 서양의 악기와 음악에 놀랐을 것이다. 서양 화성학의 잘 짜인 논리 체계는 감탄할 만하다. 그러나 당신이 클래식 피아노를 아무리 잘 쳐서 세계 최고의 피아니스트가 된다 한들, 그것이 증명하는 바는 결국 "서양 음악은 모든 문화권이 따라야 할 이상향이며, 동양인이 이만큼 따라왔다"는 것이다. 그때 당신은 열등감에서 벗어날 자신이 있는가? 그때 당신이 진정 속했다고 느낄 공동체는 어디에 있는가?</p>
+
+  <p>이런 거창한 말이 아니어도, 유럽과 미국에서 수입한 음악을 지겨워하는 사람들이 나타나기 시작한 듯하다. 어딜 가도 같은 음악이 나오고, 우리는 그것을 주구장창 들어왔다. 나는 테크노가, 힙합이, 재즈가 지겹다. 뉴욕의 재즈 바에 가든 베를린의 테크노 클럽에 가든, 솔직히 한국에서 국악 공연을 보는 편이 더 새로울 것이다. 그런데 수입 음악에 질렸으면 우리 것으로 눈을 돌릴 수도 있을 텐데, 왜 또 다른 곳에서 문화를 수입하려 하는가? 동남아, 아프리카, 남미, 카리브해. 이 땅에는 그렇게 재밌는 게 없단 말인가?</p>
+
+  <p>국악 공연 안내 책자나 국악인의 홈페이지 소개글을 보면 "세계화"라는 단어가 심심치 않게 보인다. 뒤늦게 국악에 관심이 생긴 나로서는 당황스럽다. 한국인이 국악을 안 듣는데 해외에서 공연하는 게 무슨 소용이란 말인가? "저희 고향에서는 너무 귀해서 아무도 안 듣는 음악인데, 한번 감상해 보시지요"는 설득력이 없다. 한국에서 받는 인정은 하찮고, 외국에서 받는 인정만 가치 있는 것인가? 국악인조차 사대주의에 빠져 있는 것은 아닌가? 우리는 문화조차 자급자족이 불가능한가?</p>
+
+  <p>한쪽은 수입에, 한쪽은 수출에 관심을 갖는다. 그러다 보니 우리가 진정 우리 것이라 느낄 수 있는 공동체를 이 땅에서 음악으로 가꾸는 사람이 없다. 우리는 수입도, 수출도 거부한다. 수입은 이미 충분하다. 이미 들어온 문화까지 포함해 지금 이 상태를 봉인하고, 한국적인 것을 발굴하며 나아간다. 이 땅에서 나고 자란 것을 재료 삼아 음악과 공연을 만드는 문화 자급자족을 실천해 보이겠다.</p>
+
+  <h2>탈-완벽주의</h2>
+
+  <p>다시 한번 강조하자면, 공연은 퍼포머가 얼마나 완벽한지 확인하는 자리가 아니다. 그러나 요즘의 공연은 연주가 얼마나 완벽한지, 가사를 절지는 않는지, 삑사리가 나지는 않는지 평가하는 자리가 되었다. 이런 분위기는 음악을 직접 행해 보려는 사람을 주저하게 만든다. 벌써 반박이 들려온다. 사람마다 타고난 기질이 달라서, 누군가는 그저 감상하는 쪽이 더 즐겁다고. 우리는 고집하겠다. 누구든 직접 행할 때가 더 즐겁다.</p>
+
+  <p>재즈와 클래식이 수입된 지 세월이 꽤 흘러 우리나라도 교육이 상당히 이루어졌다. 음악 프로듀싱도 마찬가지다. 기술적 완성도를 추구하는 것은 좋다. 여기서 기술적 완성도란 연주와 녹음은 깔끔한지, 화성은 치밀하게 계산되었는지, 악기들은 서로 부딪히지 않게 정돈되었는지, 요컨대 흠을 얼마나 지웠는가를 말한다. 그러나 어째서인지 흠 없는 음악은 갈수록 넘쳐나는데, 죄다 거기서 거기다. 모두가 같은 방향으로 완성도를 끌어올리다 보니 개성이 사라진다. 오히려 엉성한 음악이 새롭게 들릴 지경이다.</p>
+
+  <p>우리는 아마추어를 예찬하겠다. 아마추어의 어원은 라틴어 아마토르(amator), "사랑하는 사람"이다.</p>
+
+  <div class="credits">
+    <div class="left">
+      <span class="role">작성</span><br>
+      김태준(닥터아코)
+    </div>
+    <div class="right">
+      <span class="role">검토</span><br>
+      이재황<br>
+      배준형
+    </div>
+  </div>
 </main>
 
-<footer>
-  <p>© <span id="yr">2026</span> hypertoilets · 모든 것은 흘러갑니다.</p>
-</footer>
-
-<script type="module" src="scene.js"></script>
 </body>
 </html>
